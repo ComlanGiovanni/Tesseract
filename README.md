@@ -1,15 +1,8 @@
 # Tesseract
 
-Un environnement de développement de jeu moderne en C++ pour explorer les concepts fondamentaux du développement de jeux.
-
-## Prérequis
-
-- C++17 ou supérieur
-- CMake 3.15 ou supérieur
-- SDL2
-- OpenGL 3.3 ou supérieur
-- GLEW
-- Compilateur C++ moderne (GCC, Clang, ou MSVC)
+Un environnement de développement de jeu moderne en C++ pour explorer les concepts fondamentaux du développement de jeux, the main goal is to have fun nothing serious for the moment, if i have some wired
+ass idea or if i want to explore concept i will do the magic here you can explore if you want but it's very
+personal trainning arc so don't really bother.
 
 ## Installation des dépendances
 
@@ -19,15 +12,7 @@ sudo apt-get update
 sudo apt-get install build-essential cmake libsdl2-dev libglew-dev
 ```
 
-### Fedora
-```bash
-sudo dnf install gcc-c++ cmake SDL2-devel glew-devel
-```
-
-### macOS (avec Homebrew)
-```bash
-brew install cmake sdl2 glew
-```
+### Le reste demerder vous
 
 ## Compilation
 
@@ -43,18 +28,6 @@ cmake ..
 make
 ```
 
-## Structure du projet
-
-```
-tesseract/
-├── src/                 # Fichiers sources C++
-├── include/             # Fichiers d'en-tête
-├── lib/                 # Bibliothèques externes
-├── assets/              # Ressources (textures, audio, shaders)
-├── CMakeLists.txt       # Script de build principal
-└── README.md            # Documentation
-```
-
 ## Fonctionnalités prévues
 
 - [ ] Boucle de jeu personnalisée
@@ -63,9 +36,11 @@ tesseract/
 - [ ] Système ECS (Entity-Component-System)
 - [ ] Interface de débogage avec ImGui
 - [ ] Chargement d'assets
-- [ ] Intégration de scripts (Lua)
-- [ ] Physique et réseau de base
+- [ ] Intégration de scripts (Lua) ???? mais mdr jamais de la vie
+- [ ] Physique et réseau de base, les truc de base hein bon doucement
 
 ## Licence
 
 Ce projet est sous licence MIT. Voir le fichier LICENSE pour plus de détails.
+Franchement je sais pas tu vas faire quoi avec cette sandbox mais fait comme tu
+veux !
