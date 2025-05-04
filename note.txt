@@ -1,0 +1,66 @@
+	To build a solid, modern, and flexible game dev playground to master:
+
+C++ fundamentals
+Low-level game programming concepts
+Real-world use of libraries and tools used in Unreal Engine, Unity, and Godot
+
+	Stack & Technologies
+Layer	Tool / Library	Purpose
+Language	C++17 or C++20	Core game development language (esp. for Unreal)
+Build System	CMake	Manage builds, cross-platform
+Window/Input	SDL2	Cross-platform input, window, audio, and timing
+Rendering	OpenGL 3.3+	Low-level graphics (learn rendering pipeline)
+UI Debug Tools	Dear ImGui	In-game debug menus, dev tools, editors
+Dev Tools	VSCode + C++ extensions or CLion	Coding, navigation, and debugging
+Version Control	Git + GitHub	Track your progress, experiment safely
+
+	Folder Structure (Suggested) will evolve with time.
+tesseract/
+├── src/                 ← Your C++ source files
+├── include/             ← Your headers
+├── lib/                 ← External libs (SDL2, ImGui, etc.)
+├── assets/              ← Textures, audio, shaders
+├── CMakeLists.txt       ← Project build script
+└── README.md            ← Project overview + setup
+
+ Features You’ll Experiment With
+Custom game loop
+
+Input handling via SDL2
+
+OpenGL rendering (2D sprites, shaders, later 3D)
+
+Custom ECS (Entity-Component-System)
+
+Debug UIs with ImGui
+
+Loading assets (textures, audio)
+
+Scripting integration (e.g., Lua down the line)
+
+Possibly physics and basic networking
+
+🚀 First Steps
+Set up CMake project
+
+Add SDL2 and basic window + input loop
+
+Integrate OpenGL rendering
+
+Overlay Dear ImGui for debugging
+
+Render a triangle → move a sprite → build from there!
+
+A README.md template for tesseract
+
+A basic CMake + SDL2 + OpenGL + ImGui starter template repo
+
+
+i would like to create a readme.md that will gather information of what i am doing
+what to do to run the project and some tips and tricks for me or people who will read this
+
+sudo apt-get update && sudo apt-get install -y build-essential cmake libsdl2-dev libglew-dev
+mkdir -p build && cd build && cmake .. && make
+sudo dpkg --configure -a
+sudo apt-get remove --purge cmake && sudo apt-get install cmake
+sudo apt-get install --reinstall cmake-data cmake
