@@ -8,14 +8,14 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 option(BUILD_TESTS "Build test programs" OFF)
 option(BUILD_DOCS "Build documentation" OFF)
 
-# Configuration des sous-répertoires
-add_subdirectory(src)
-add_subdirectory(lib/imgui)
-
 # Configuration des dépendances externes
 find_package(OpenGL REQUIRED)
 find_package(SDL2 REQUIRED)
 find_package(GLEW REQUIRED)
+
+# Configuration des sous-répertoires
+add_subdirectory(src)
+add_subdirectory(lib/imgui)
 
 # Configuration des options de compilation
 if(MSVC)

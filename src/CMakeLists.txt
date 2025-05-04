@@ -10,6 +10,7 @@ target_link_libraries(tesseract
     OpenGL::GL
     SDL2::SDL2
     SDL2::SDL2main
+    GLEW::GLEW
 )
 
 # Configuration des include directories
