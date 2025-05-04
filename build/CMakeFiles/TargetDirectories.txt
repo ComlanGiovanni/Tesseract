@@ -1,8 +1,0 @@
-/media/ysera/Extreme SSD/sandbox/Tesseract/build/CMakeFiles/edit_cache.dir
-/media/ysera/Extreme SSD/sandbox/Tesseract/build/CMakeFiles/rebuild_cache.dir
-/media/ysera/Extreme SSD/sandbox/Tesseract/build/src/CMakeFiles/tesseract.dir
-/media/ysera/Extreme SSD/sandbox/Tesseract/build/src/CMakeFiles/edit_cache.dir
-/media/ysera/Extreme SSD/sandbox/Tesseract/build/src/CMakeFiles/rebuild_cache.dir
-/media/ysera/Extreme SSD/sandbox/Tesseract/build/lib/imgui/CMakeFiles/imgui.dir
-/media/ysera/Extreme SSD/sandbox/Tesseract/build/lib/imgui/CMakeFiles/edit_cache.dir
-/media/ysera/Extreme SSD/sandbox/Tesseract/build/lib/imgui/CMakeFiles/rebuild_cache.dir

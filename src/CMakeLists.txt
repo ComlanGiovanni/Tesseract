@@ -1,5 +1,5 @@
 # Configuration des fichiers sources
-file(GLOB_RECURSE SOURCES "*.cpp")
+set(SOURCES main.cpp)
 
 # Création de l'exécutable principal
 add_executable(tesseract ${SOURCES})

@@ -13,6 +13,17 @@ find_package(OpenGL REQUIRED)
 find_package(SDL2 REQUIRED)
 find_package(GLEW REQUIRED)
 
+# Configuration des chemins d'inclusion
+include_directories(
+    ${OPENGL_INCLUDE_DIR}
+    ${SDL2_INCLUDE_DIRS}
+    ${GLEW_INCLUDE_DIRS}
+    ${CMAKE_SOURCE_DIR}/include
+    ${CMAKE_SOURCE_DIR}/lib
+    ${CMAKE_SOURCE_DIR}/lib/imgui
+    ${CMAKE_SOURCE_DIR}/lib/imgui/backends
+)
+
 # Configuration des sous-répertoires
 add_subdirectory(src)
 add_subdirectory(lib/imgui)
@@ -25,6 +36,6 @@ else()
 endif()
 
 # Configuration des variables globales
-set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR})
 set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib)
 set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib)

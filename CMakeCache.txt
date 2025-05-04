@@ -291,7 +291,7 @@ imgui_BINARY_DIR:STATIC=/media/ysera/Extreme SSD/sandbox/Tesseract/lib/imgui
 imgui_IS_TOP_LEVEL:STATIC=OFF
 
 //Dependencies for the target
-imgui_LIB_DEPENDS:STATIC=general;-L/usr/lib/x86_64-linux-gnu  -lSDL2;general;/usr/lib/x86_64-linux-gnu/libOpenGL.so;general;/usr/lib/x86_64-linux-gnu/libGLX.so;general;/usr/lib/x86_64-linux-gnu/libGLU.so;
+imgui_LIB_DEPENDS:STATIC=general;-L/usr/lib/x86_64-linux-gnu  -lSDL2;general;/usr/lib/x86_64-linux-gnu/libOpenGL.so;general;/usr/lib/x86_64-linux-gnu/libGLX.so;general;/usr/lib/x86_64-linux-gnu/libGLU.so;general;/usr/lib/x86_64-linux-gnu/libGLEW.so;
 
 //Value Computed by CMake
 imgui_SOURCE_DIR:STATIC=/media/ysera/Extreme SSD/sandbox/Tesseract/lib/imgui
