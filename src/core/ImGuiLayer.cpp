@@ -31,7 +31,7 @@ namespace Tesseract {
         ImGui::DestroyContext();
     }
 
-    void ImGuiLayer::OnUpdate() {
+    void ImGuiLayer::OnUpdate(Timestep ts) {
         // Démo ImGui
         static bool show_demo_window = true;
         static bool show_another_window = false;

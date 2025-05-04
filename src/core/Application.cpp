@@ -2,6 +2,8 @@
 #include "core/Logger.hpp"
 #include "core/Core.hpp"
 #include "core/ImGuiLayer.hpp"
+#include "core/Timestep.hpp"
+#include <SDL2/SDL.h>
 
 namespace Tesseract {
     Application* Application::s_Instance = nullptr;
@@ -38,26 +40,29 @@ namespace Tesseract {
 
     void Application::Run() {
         Logger::Info("Starting main loop...");
+
+        Uint64 lastFrameTime = SDL_GetPerformanceCounter();
+        float time = 0.0f;
+
         while (m_Running) {
+            Uint64 currentFrameTime = SDL_GetPerformanceCounter();
+            time = (float)(currentFrameTime - lastFrameTime) / SDL_GetPerformanceFrequency();
+            lastFrameTime = currentFrameTime;
+
+            Timestep timestep(time);
+
             if (m_Window->ShouldClose()) {
                 m_Running = false;
                 continue;
             }
 
-            // Mise à jour de la fenêtre (gestion des événements et nettoyage du buffer)
             m_Window->OnUpdate();
-
-            // Début du frame ImGui
             m_ImGuiLayer->Begin();
 
-            // Mise à jour des layers
             for (Layer* layer : m_LayerStack)
-                layer->OnUpdate();
+                layer->OnUpdate(timestep);
 
-            // Fin du frame ImGui et rendu
             m_ImGuiLayer->End();
-
-            // Échange des buffers
             m_Window->SwapBuffers();
         }
     }
