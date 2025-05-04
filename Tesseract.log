@@ -1,0 +1,10 @@
+[00:16:30] [info] TESSERACT: Initializing Tesseract Engine...
+[00:16:30] [info] TESSERACT: Creating window Tesseract (1280, 720)
+[00:16:31] [info] TESSERACT: OpenGL Info:
+[00:16:31] [info] TESSERACT:   Vendor: Intel
+[00:16:31] [info] TESSERACT:   Renderer: Mesa Intel(R) UHD Graphics 630 (CFL GT2)
+[00:16:31] [info] TESSERACT:   Version: 4.6 (Core Profile) Mesa 23.2.1-1ubuntu3.1~22.04.3
+[00:16:31] [info] TESSERACT: TesseractApp created!
+[00:16:31] [info] TESSERACT: Starting main loop...
+[00:16:39] [info] TESSERACT: TesseractApp destroyed!
+[00:16:39] [info] TESSERACT: Shutting down Tesseract Engine...

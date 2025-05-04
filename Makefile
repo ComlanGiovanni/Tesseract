@@ -117,17 +117,30 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named tesseract
+# Target rules for targets named Tesseract
 
 # Build rule for target.
-tesseract: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tesseract
-.PHONY : tesseract
+Tesseract: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Tesseract
+.PHONY : Tesseract
 
 # fast build rule for target.
-tesseract/fast:
-	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/tesseract.dir/build.make src/CMakeFiles/tesseract.dir/build
-.PHONY : tesseract/fast
+Tesseract/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tesseract.dir/build.make CMakeFiles/Tesseract.dir/build
+.PHONY : Tesseract/fast
+
+#=============================================================================
+# Target rules for targets named spdlog
+
+# Build rule for target.
+spdlog: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 spdlog
+.PHONY : spdlog
+
+# fast build rule for target.
+spdlog/fast:
+	$(MAKE) $(MAKESILENT) -f lib/spdlog/CMakeFiles/spdlog.dir/build.make lib/spdlog/CMakeFiles/spdlog.dir/build
+.PHONY : spdlog/fast
 
 #=============================================================================
 # Target rules for targets named imgui
@@ -142,6 +155,198 @@ imgui/fast:
 	$(MAKE) $(MAKESILENT) -f lib/imgui/CMakeFiles/imgui.dir/build.make lib/imgui/CMakeFiles/imgui.dir/build
 .PHONY : imgui/fast
 
+src/Sandbox/SandboxApp.o: src/Sandbox/SandboxApp.cpp.o
+.PHONY : src/Sandbox/SandboxApp.o
+
+# target to build an object file
+src/Sandbox/SandboxApp.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tesseract.dir/build.make CMakeFiles/Tesseract.dir/src/Sandbox/SandboxApp.cpp.o
+.PHONY : src/Sandbox/SandboxApp.cpp.o
+
+src/Sandbox/SandboxApp.i: src/Sandbox/SandboxApp.cpp.i
+.PHONY : src/Sandbox/SandboxApp.i
+
+# target to preprocess a source file
+src/Sandbox/SandboxApp.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tesseract.dir/build.make CMakeFiles/Tesseract.dir/src/Sandbox/SandboxApp.cpp.i
+.PHONY : src/Sandbox/SandboxApp.cpp.i
+
+src/Sandbox/SandboxApp.s: src/Sandbox/SandboxApp.cpp.s
+.PHONY : src/Sandbox/SandboxApp.s
+
+# target to generate assembly for a file
+src/Sandbox/SandboxApp.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tesseract.dir/build.make CMakeFiles/Tesseract.dir/src/Sandbox/SandboxApp.cpp.s
+.PHONY : src/Sandbox/SandboxApp.cpp.s
+
+src/core/Application.o: src/core/Application.cpp.o
+.PHONY : src/core/Application.o
+
+# target to build an object file
+src/core/Application.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tesseract.dir/build.make CMakeFiles/Tesseract.dir/src/core/Application.cpp.o
+.PHONY : src/core/Application.cpp.o
+
+src/core/Application.i: src/core/Application.cpp.i
+.PHONY : src/core/Application.i
+
+# target to preprocess a source file
+src/core/Application.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tesseract.dir/build.make CMakeFiles/Tesseract.dir/src/core/Application.cpp.i
+.PHONY : src/core/Application.cpp.i
+
+src/core/Application.s: src/core/Application.cpp.s
+.PHONY : src/core/Application.s
+
+# target to generate assembly for a file
+src/core/Application.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tesseract.dir/build.make CMakeFiles/Tesseract.dir/src/core/Application.cpp.s
+.PHONY : src/core/Application.cpp.s
+
+src/core/EntryPoint.o: src/core/EntryPoint.cpp.o
+.PHONY : src/core/EntryPoint.o
+
+# target to build an object file
+src/core/EntryPoint.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tesseract.dir/build.make CMakeFiles/Tesseract.dir/src/core/EntryPoint.cpp.o
+.PHONY : src/core/EntryPoint.cpp.o
+
+src/core/EntryPoint.i: src/core/EntryPoint.cpp.i
+.PHONY : src/core/EntryPoint.i
+
+# target to preprocess a source file
+src/core/EntryPoint.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tesseract.dir/build.make CMakeFiles/Tesseract.dir/src/core/EntryPoint.cpp.i
+.PHONY : src/core/EntryPoint.cpp.i
+
+src/core/EntryPoint.s: src/core/EntryPoint.cpp.s
+.PHONY : src/core/EntryPoint.s
+
+# target to generate assembly for a file
+src/core/EntryPoint.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tesseract.dir/build.make CMakeFiles/Tesseract.dir/src/core/EntryPoint.cpp.s
+.PHONY : src/core/EntryPoint.cpp.s
+
+src/core/ImGuiLayer.o: src/core/ImGuiLayer.cpp.o
+.PHONY : src/core/ImGuiLayer.o
+
+# target to build an object file
+src/core/ImGuiLayer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tesseract.dir/build.make CMakeFiles/Tesseract.dir/src/core/ImGuiLayer.cpp.o
+.PHONY : src/core/ImGuiLayer.cpp.o
+
+src/core/ImGuiLayer.i: src/core/ImGuiLayer.cpp.i
+.PHONY : src/core/ImGuiLayer.i
+
+# target to preprocess a source file
+src/core/ImGuiLayer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tesseract.dir/build.make CMakeFiles/Tesseract.dir/src/core/ImGuiLayer.cpp.i
+.PHONY : src/core/ImGuiLayer.cpp.i
+
+src/core/ImGuiLayer.s: src/core/ImGuiLayer.cpp.s
+.PHONY : src/core/ImGuiLayer.s
+
+# target to generate assembly for a file
+src/core/ImGuiLayer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tesseract.dir/build.make CMakeFiles/Tesseract.dir/src/core/ImGuiLayer.cpp.s
+.PHONY : src/core/ImGuiLayer.cpp.s
+
+src/core/Layer.o: src/core/Layer.cpp.o
+.PHONY : src/core/Layer.o
+
+# target to build an object file
+src/core/Layer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tesseract.dir/build.make CMakeFiles/Tesseract.dir/src/core/Layer.cpp.o
+.PHONY : src/core/Layer.cpp.o
+
+src/core/Layer.i: src/core/Layer.cpp.i
+.PHONY : src/core/Layer.i
+
+# target to preprocess a source file
+src/core/Layer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tesseract.dir/build.make CMakeFiles/Tesseract.dir/src/core/Layer.cpp.i
+.PHONY : src/core/Layer.cpp.i
+
+src/core/Layer.s: src/core/Layer.cpp.s
+.PHONY : src/core/Layer.s
+
+# target to generate assembly for a file
+src/core/Layer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tesseract.dir/build.make CMakeFiles/Tesseract.dir/src/core/Layer.cpp.s
+.PHONY : src/core/Layer.cpp.s
+
+src/core/Logger.o: src/core/Logger.cpp.o
+.PHONY : src/core/Logger.o
+
+# target to build an object file
+src/core/Logger.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tesseract.dir/build.make CMakeFiles/Tesseract.dir/src/core/Logger.cpp.o
+.PHONY : src/core/Logger.cpp.o
+
+src/core/Logger.i: src/core/Logger.cpp.i
+.PHONY : src/core/Logger.i
+
+# target to preprocess a source file
+src/core/Logger.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tesseract.dir/build.make CMakeFiles/Tesseract.dir/src/core/Logger.cpp.i
+.PHONY : src/core/Logger.cpp.i
+
+src/core/Logger.s: src/core/Logger.cpp.s
+.PHONY : src/core/Logger.s
+
+# target to generate assembly for a file
+src/core/Logger.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tesseract.dir/build.make CMakeFiles/Tesseract.dir/src/core/Logger.cpp.s
+.PHONY : src/core/Logger.cpp.s
+
+src/core/Window.o: src/core/Window.cpp.o
+.PHONY : src/core/Window.o
+
+# target to build an object file
+src/core/Window.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tesseract.dir/build.make CMakeFiles/Tesseract.dir/src/core/Window.cpp.o
+.PHONY : src/core/Window.cpp.o
+
+src/core/Window.i: src/core/Window.cpp.i
+.PHONY : src/core/Window.i
+
+# target to preprocess a source file
+src/core/Window.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tesseract.dir/build.make CMakeFiles/Tesseract.dir/src/core/Window.cpp.i
+.PHONY : src/core/Window.cpp.i
+
+src/core/Window.s: src/core/Window.cpp.s
+.PHONY : src/core/Window.s
+
+# target to generate assembly for a file
+src/core/Window.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tesseract.dir/build.make CMakeFiles/Tesseract.dir/src/core/Window.cpp.s
+.PHONY : src/core/Window.cpp.s
+
+src/main.o: src/main.cpp.o
+.PHONY : src/main.o
+
+# target to build an object file
+src/main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tesseract.dir/build.make CMakeFiles/Tesseract.dir/src/main.cpp.o
+.PHONY : src/main.cpp.o
+
+src/main.i: src/main.cpp.i
+.PHONY : src/main.i
+
+# target to preprocess a source file
+src/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tesseract.dir/build.make CMakeFiles/Tesseract.dir/src/main.cpp.i
+.PHONY : src/main.cpp.i
+
+src/main.s: src/main.cpp.s
+.PHONY : src/main.s
+
+# target to generate assembly for a file
+src/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tesseract.dir/build.make CMakeFiles/Tesseract.dir/src/main.cpp.s
+.PHONY : src/main.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -150,8 +355,33 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... Tesseract"
 	@echo "... imgui"
-	@echo "... tesseract"
+	@echo "... spdlog"
+	@echo "... src/Sandbox/SandboxApp.o"
+	@echo "... src/Sandbox/SandboxApp.i"
+	@echo "... src/Sandbox/SandboxApp.s"
+	@echo "... src/core/Application.o"
+	@echo "... src/core/Application.i"
+	@echo "... src/core/Application.s"
+	@echo "... src/core/EntryPoint.o"
+	@echo "... src/core/EntryPoint.i"
+	@echo "... src/core/EntryPoint.s"
+	@echo "... src/core/ImGuiLayer.o"
+	@echo "... src/core/ImGuiLayer.i"
+	@echo "... src/core/ImGuiLayer.s"
+	@echo "... src/core/Layer.o"
+	@echo "... src/core/Layer.i"
+	@echo "... src/core/Layer.s"
+	@echo "... src/core/Logger.o"
+	@echo "... src/core/Logger.i"
+	@echo "... src/core/Logger.s"
+	@echo "... src/core/Window.o"
+	@echo "... src/core/Window.i"
+	@echo "... src/core/Window.s"
+	@echo "... src/main.o"
+	@echo "... src/main.i"
+	@echo "... src/main.s"
 .PHONY : help
 
 

@@ -51,14 +51,20 @@ Overlay Dear ImGui for debugging
 
 Render a triangle → move a sprite → build from there!
 
-A README.md template for tesseract
-
-A basic CMake + SDL2 + OpenGL + ImGui starter template repo
 
 
-i would like to create a readme.md that will gather information of what i am doing
-what to do to run the project and some tips and tricks for me or people who will read this
 
+
+
+
+
+
+
+
+
+
+
+#Personal note
 sudo apt-get update && sudo apt-get install -y build-essential cmake libsdl2-dev libglew-dev
 mkdir -p build && cd build && cmake .. && make
 sudo dpkg --configure -a

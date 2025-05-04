@@ -12,7 +12,9 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.22.1/CMakeSystem.cmake"
   "CMakeLists.txt"
   "lib/imgui/CMakeLists.txt"
-  "src/CMakeLists.txt"
+  "lib/spdlog/CMakeLists.txt"
+  "lib/spdlog/cmake/ide.cmake"
+  "lib/spdlog/cmake/utils.cmake"
   "/usr/lib/x86_64-linux-gnu/cmake/SDL2/sdl2-config-version.cmake"
   "/usr/lib/x86_64-linux-gnu/cmake/SDL2/sdl2-config.cmake"
   "/usr/share/cmake-3.22/Modules/CMakeCInformation.cmake"
@@ -23,6 +25,10 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/usr/share/cmake-3.22/Modules/CMakeLanguageInformation.cmake"
   "/usr/share/cmake-3.22/Modules/CMakeSystemSpecificInformation.cmake"
   "/usr/share/cmake-3.22/Modules/CMakeSystemSpecificInitialize.cmake"
+  "/usr/share/cmake-3.22/Modules/CheckCSourceCompiles.cmake"
+  "/usr/share/cmake-3.22/Modules/CheckIncludeFile.cmake"
+  "/usr/share/cmake-3.22/Modules/CheckLibraryExists.cmake"
+  "/usr/share/cmake-3.22/Modules/CheckSymbolExists.cmake"
   "/usr/share/cmake-3.22/Modules/Compiler/CMakeCommonCompilerMacros.cmake"
   "/usr/share/cmake-3.22/Modules/Compiler/GNU-C.cmake"
   "/usr/share/cmake-3.22/Modules/Compiler/GNU-CXX.cmake"
@@ -31,6 +37,9 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/usr/share/cmake-3.22/Modules/FindOpenGL.cmake"
   "/usr/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake"
   "/usr/share/cmake-3.22/Modules/FindPackageMessage.cmake"
+  "/usr/share/cmake-3.22/Modules/FindThreads.cmake"
+  "/usr/share/cmake-3.22/Modules/GNUInstallDirs.cmake"
+  "/usr/share/cmake-3.22/Modules/Internal/CheckSourceCompiles.cmake"
   "/usr/share/cmake-3.22/Modules/Platform/Linux-GNU-C.cmake"
   "/usr/share/cmake-3.22/Modules/Platform/Linux-GNU-CXX.cmake"
   "/usr/share/cmake-3.22/Modules/Platform/Linux-GNU.cmake"
@@ -48,12 +57,13 @@ set(CMAKE_MAKEFILE_OUTPUTS
 # Byproducts of CMake generate step:
 set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/CMakeDirectoryInformation.cmake"
-  "src/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "lib/spdlog/CMakeFiles/CMakeDirectoryInformation.cmake"
   "lib/imgui/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "src/CMakeFiles/tesseract.dir/DependInfo.cmake"
+  "CMakeFiles/Tesseract.dir/DependInfo.cmake"
+  "lib/spdlog/CMakeFiles/spdlog.dir/DependInfo.cmake"
   "lib/imgui/CMakeFiles/imgui.dir/DependInfo.cmake"
   )

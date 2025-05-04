@@ -448,3 +448,78 @@ Parsed C implicit link information from above output:
   implicit fwks: []
 
 
+Determining if the include file pthread.h exists passed with the following output:
+Change Dir: /media/ysera/Extreme SSD/sandbox/Tesseract/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_158c7/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_158c7.dir/build.make CMakeFiles/cmTC_158c7.dir/build
+gmake[1]: Entering directory '/media/ysera/Extreme SSD/sandbox/Tesseract/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_158c7.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_158c7.dir/CheckIncludeFile.c.o -c "/media/ysera/Extreme SSD/sandbox/Tesseract/CMakeFiles/CMakeTmp/CheckIncludeFile.c"
+Linking C executable cmTC_158c7
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_158c7.dir/link.txt --verbose=1
+/usr/bin/cc CMakeFiles/cmTC_158c7.dir/CheckIncludeFile.c.o -o cmTC_158c7 
+gmake[1]: Leaving directory '/media/ysera/Extreme SSD/sandbox/Tesseract/CMakeFiles/CMakeTmp'
+
+
+
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD succeeded with the following output:
+Change Dir: /media/ysera/Extreme SSD/sandbox/Tesseract/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_1256f/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_1256f.dir/build.make CMakeFiles/cmTC_1256f.dir/build
+gmake[1]: Entering directory '/media/ysera/Extreme SSD/sandbox/Tesseract/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_1256f.dir/src.c.o
+/usr/bin/cc -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_1256f.dir/src.c.o -c "/media/ysera/Extreme SSD/sandbox/Tesseract/CMakeFiles/CMakeTmp/src.c"
+Linking C executable cmTC_1256f
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1256f.dir/link.txt --verbose=1
+/usr/bin/cc CMakeFiles/cmTC_1256f.dir/src.c.o -o cmTC_1256f 
+gmake[1]: Leaving directory '/media/ysera/Extreme SSD/sandbox/Tesseract/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+#include <pthread.h>
+
+static void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_cancel(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Determining if the fwrite_unlocked exist passed with the following output:
+Change Dir: /media/ysera/Extreme SSD/sandbox/Tesseract/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_ecf92/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_ecf92.dir/build.make CMakeFiles/cmTC_ecf92.dir/build
+gmake[1]: Entering directory '/media/ysera/Extreme SSD/sandbox/Tesseract/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_ecf92.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_ecf92.dir/CheckSymbolExists.c.o -c "/media/ysera/Extreme SSD/sandbox/Tesseract/CMakeFiles/CMakeTmp/CheckSymbolExists.c"
+Linking C executable cmTC_ecf92
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ecf92.dir/link.txt --verbose=1
+/usr/bin/cc CMakeFiles/cmTC_ecf92.dir/CheckSymbolExists.c.o -o cmTC_ecf92 
+gmake[1]: Leaving directory '/media/ysera/Extreme SSD/sandbox/Tesseract/CMakeFiles/CMakeTmp'
+
+
+File /media/ysera/Extreme SSD/sandbox/Tesseract/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdio.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef fwrite_unlocked
+  return ((int*)(&fwrite_unlocked))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
