@@ -14,11 +14,16 @@ namespace Tesseract {
         m_Window = CreateScope<Window>(WindowProps(name));
 
         // Création et ajout de la couche ImGui
-        PushOverlay(new ImGuiLayer());
+        m_ImGuiLayer = new ImGuiLayer();
+        PushOverlay(m_ImGuiLayer);
     }
 
     Application::~Application() {
         Logger::Info("Shutting down Tesseract Engine...");
+        for (Layer* layer : m_LayerStack) {
+            layer->OnDetach();
+            delete layer;
+        }
     }
 
     void Application::PushLayer(Layer* layer) {
@@ -39,11 +44,21 @@ namespace Tesseract {
                 continue;
             }
 
+            // Mise à jour de la fenêtre (gestion des événements et nettoyage du buffer)
+            m_Window->OnUpdate();
+
+            // Début du frame ImGui
+            m_ImGuiLayer->Begin();
+
             // Mise à jour des layers
             for (Layer* layer : m_LayerStack)
                 layer->OnUpdate();
 
-            m_Window->OnUpdate();
+            // Fin du frame ImGui et rendu
+            m_ImGuiLayer->End();
+
+            // Échange des buffers
+            m_Window->SwapBuffers();
         }
     }
 

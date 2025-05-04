@@ -1,6 +1,8 @@
 #include "core/Window.hpp"
 #include "core/Logger.hpp"
 #include <GL/glew.h>
+#include <imgui.h>
+#include <backends/imgui_impl_sdl2.h>
 
 namespace Tesseract {
     Window::Window(const WindowProps& props) : m_Data(props) {
@@ -67,6 +69,8 @@ namespace Tesseract {
     void Window::OnUpdate() {
         SDL_Event event;
         while (SDL_PollEvent(&event)) {
+            ImGui_ImplSDL2_ProcessEvent(&event);
+
             switch (event.type) {
                 case SDL_QUIT:
                     m_Data.WindowShouldClose = true;
@@ -81,7 +85,11 @@ namespace Tesseract {
             }
         }
 
+        // Nettoyage du buffer
         glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+    }
+
+    void Window::SwapBuffers() {
         SDL_GL_SwapWindow(m_Window);
     }
 

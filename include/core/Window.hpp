@@ -23,6 +23,7 @@ namespace Tesseract {
         ~Window();
 
         void OnUpdate();
+        void SwapBuffers();
         void SetVSync(bool enabled);
         bool IsVSync() const { return m_VSync; }
         bool ShouldClose() const;

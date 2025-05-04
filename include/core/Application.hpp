@@ -6,6 +6,7 @@
 #include "core/Window.hpp"
 #include "core/Logger.hpp"
 #include "core/Layer.hpp"
+#include "core/ImGuiLayer.hpp"
 
 namespace Tesseract {
     class Application {
@@ -27,6 +28,7 @@ namespace Tesseract {
         std::unique_ptr<Window> m_Window;
         bool m_Running = true;
         std::vector<Layer*> m_LayerStack;
+        ImGuiLayer* m_ImGuiLayer;
     };
 
     // Déclaration de la fonction à implémenter par l'application cliente

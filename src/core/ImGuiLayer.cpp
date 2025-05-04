@@ -32,8 +32,6 @@ namespace Tesseract {
     }
 
     void ImGuiLayer::OnUpdate() {
-        Begin();
-
         // Démo ImGui
         static bool show_demo_window = true;
         static bool show_another_window = false;
@@ -48,9 +46,9 @@ namespace Tesseract {
             static float f = 0.0f;
             static int counter = 0;
 
-            ImGui::Begin("Hello, world!");
+            ImGui::Begin("Hello, Tesseract!");
 
-            ImGui::Text("This is some useful text.");
+            ImGui::Text("Welcome to Tesseract Engine!");
             ImGui::Checkbox("Demo Window", &show_demo_window);
             ImGui::Checkbox("Another Window", &show_another_window);
 
@@ -77,8 +75,6 @@ namespace Tesseract {
                 show_another_window = false;
             ImGui::End();
         }
-
-        End();
     }
 
     void ImGuiLayer::OnEvent(Event& event) {
