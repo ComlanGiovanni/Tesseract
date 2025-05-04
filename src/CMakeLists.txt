@@ -11,6 +11,7 @@ target_link_libraries(tesseract
     SDL2::SDL2
     SDL2::SDL2main
     GLEW::GLEW
+    imgui
 )
 
 # Configuration des include directories
@@ -18,5 +19,7 @@ target_include_directories(tesseract
     PRIVATE
     ${CMAKE_SOURCE_DIR}/include
     ${CMAKE_SOURCE_DIR}/lib
+    ${CMAKE_SOURCE_DIR}/lib/imgui
+    ${CMAKE_SOURCE_DIR}/lib/imgui/backends
 )
 
