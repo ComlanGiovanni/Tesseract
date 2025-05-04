@@ -6,7 +6,7 @@ namespace Tesseract {
     Window::Window(const WindowProps& props) : m_Data(props) {
         Logger::Info("Creating window {0} ({1}, {2})", props.Title, props.Width, props.Height);
 
-        if (SDL_Init(SDL_INIT_VIDEO) < 0) {
+        if (SDL_Init(SDL_INIT_VIDEO | SDL_INIT_TIMER | SDL_INIT_GAMECONTROLLER) < 0) {
             Logger::Fatal("Could not initialize SDL: {0}", SDL_GetError());
             return;
         }

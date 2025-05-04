@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/Tesseract.dir/src/Sandbox/SandboxApp.cpp.o"
-  "CMakeFiles/Tesseract.dir/src/Sandbox/SandboxApp.cpp.o.d"
+  "CMakeFiles/Tesseract.dir/src/Tesseract/TesseractApp.cpp.o"
+  "CMakeFiles/Tesseract.dir/src/Tesseract/TesseractApp.cpp.o.d"
   "CMakeFiles/Tesseract.dir/src/core/Application.cpp.o"
   "CMakeFiles/Tesseract.dir/src/core/Application.cpp.o.d"
   "CMakeFiles/Tesseract.dir/src/core/EntryPoint.cpp.o"

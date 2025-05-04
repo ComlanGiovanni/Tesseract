@@ -155,29 +155,29 @@ imgui/fast:
 	$(MAKE) $(MAKESILENT) -f lib/imgui/CMakeFiles/imgui.dir/build.make lib/imgui/CMakeFiles/imgui.dir/build
 .PHONY : imgui/fast
 
-src/Sandbox/SandboxApp.o: src/Sandbox/SandboxApp.cpp.o
-.PHONY : src/Sandbox/SandboxApp.o
+src/Tesseract/TesseractApp.o: src/Tesseract/TesseractApp.cpp.o
+.PHONY : src/Tesseract/TesseractApp.o
 
 # target to build an object file
-src/Sandbox/SandboxApp.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tesseract.dir/build.make CMakeFiles/Tesseract.dir/src/Sandbox/SandboxApp.cpp.o
-.PHONY : src/Sandbox/SandboxApp.cpp.o
+src/Tesseract/TesseractApp.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tesseract.dir/build.make CMakeFiles/Tesseract.dir/src/Tesseract/TesseractApp.cpp.o
+.PHONY : src/Tesseract/TesseractApp.cpp.o
 
-src/Sandbox/SandboxApp.i: src/Sandbox/SandboxApp.cpp.i
-.PHONY : src/Sandbox/SandboxApp.i
+src/Tesseract/TesseractApp.i: src/Tesseract/TesseractApp.cpp.i
+.PHONY : src/Tesseract/TesseractApp.i
 
 # target to preprocess a source file
-src/Sandbox/SandboxApp.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tesseract.dir/build.make CMakeFiles/Tesseract.dir/src/Sandbox/SandboxApp.cpp.i
-.PHONY : src/Sandbox/SandboxApp.cpp.i
+src/Tesseract/TesseractApp.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tesseract.dir/build.make CMakeFiles/Tesseract.dir/src/Tesseract/TesseractApp.cpp.i
+.PHONY : src/Tesseract/TesseractApp.cpp.i
 
-src/Sandbox/SandboxApp.s: src/Sandbox/SandboxApp.cpp.s
-.PHONY : src/Sandbox/SandboxApp.s
+src/Tesseract/TesseractApp.s: src/Tesseract/TesseractApp.cpp.s
+.PHONY : src/Tesseract/TesseractApp.s
 
 # target to generate assembly for a file
-src/Sandbox/SandboxApp.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tesseract.dir/build.make CMakeFiles/Tesseract.dir/src/Sandbox/SandboxApp.cpp.s
-.PHONY : src/Sandbox/SandboxApp.cpp.s
+src/Tesseract/TesseractApp.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tesseract.dir/build.make CMakeFiles/Tesseract.dir/src/Tesseract/TesseractApp.cpp.s
+.PHONY : src/Tesseract/TesseractApp.cpp.s
 
 src/core/Application.o: src/core/Application.cpp.o
 .PHONY : src/core/Application.o
@@ -358,9 +358,9 @@ help:
 	@echo "... Tesseract"
 	@echo "... imgui"
 	@echo "... spdlog"
-	@echo "... src/Sandbox/SandboxApp.o"
-	@echo "... src/Sandbox/SandboxApp.i"
-	@echo "... src/Sandbox/SandboxApp.s"
+	@echo "... src/Tesseract/TesseractApp.o"
+	@echo "... src/Tesseract/TesseractApp.i"
+	@echo "... src/Tesseract/TesseractApp.s"
 	@echo "... src/core/Application.o"
 	@echo "... src/core/Application.i"
 	@echo "... src/core/Application.s"

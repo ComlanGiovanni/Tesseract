@@ -69,19 +69,19 @@ include CMakeFiles/Tesseract.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/Tesseract.dir/flags.make
 
-CMakeFiles/Tesseract.dir/src/Sandbox/SandboxApp.cpp.o: CMakeFiles/Tesseract.dir/flags.make
-CMakeFiles/Tesseract.dir/src/Sandbox/SandboxApp.cpp.o: src/Sandbox/SandboxApp.cpp
-CMakeFiles/Tesseract.dir/src/Sandbox/SandboxApp.cpp.o: CMakeFiles/Tesseract.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/media/ysera/Extreme SSD/sandbox/Tesseract/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Tesseract.dir/src/Sandbox/SandboxApp.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Tesseract.dir/src/Sandbox/SandboxApp.cpp.o -MF CMakeFiles/Tesseract.dir/src/Sandbox/SandboxApp.cpp.o.d -o CMakeFiles/Tesseract.dir/src/Sandbox/SandboxApp.cpp.o -c "/media/ysera/Extreme SSD/sandbox/Tesseract/src/Sandbox/SandboxApp.cpp"
+CMakeFiles/Tesseract.dir/src/Tesseract/TesseractApp.cpp.o: CMakeFiles/Tesseract.dir/flags.make
+CMakeFiles/Tesseract.dir/src/Tesseract/TesseractApp.cpp.o: src/Tesseract/TesseractApp.cpp
+CMakeFiles/Tesseract.dir/src/Tesseract/TesseractApp.cpp.o: CMakeFiles/Tesseract.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/media/ysera/Extreme SSD/sandbox/Tesseract/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Tesseract.dir/src/Tesseract/TesseractApp.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Tesseract.dir/src/Tesseract/TesseractApp.cpp.o -MF CMakeFiles/Tesseract.dir/src/Tesseract/TesseractApp.cpp.o.d -o CMakeFiles/Tesseract.dir/src/Tesseract/TesseractApp.cpp.o -c "/media/ysera/Extreme SSD/sandbox/Tesseract/src/Tesseract/TesseractApp.cpp"
 
-CMakeFiles/Tesseract.dir/src/Sandbox/SandboxApp.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Tesseract.dir/src/Sandbox/SandboxApp.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/media/ysera/Extreme SSD/sandbox/Tesseract/src/Sandbox/SandboxApp.cpp" > CMakeFiles/Tesseract.dir/src/Sandbox/SandboxApp.cpp.i
+CMakeFiles/Tesseract.dir/src/Tesseract/TesseractApp.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Tesseract.dir/src/Tesseract/TesseractApp.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/media/ysera/Extreme SSD/sandbox/Tesseract/src/Tesseract/TesseractApp.cpp" > CMakeFiles/Tesseract.dir/src/Tesseract/TesseractApp.cpp.i
 
-CMakeFiles/Tesseract.dir/src/Sandbox/SandboxApp.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Tesseract.dir/src/Sandbox/SandboxApp.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/media/ysera/Extreme SSD/sandbox/Tesseract/src/Sandbox/SandboxApp.cpp" -o CMakeFiles/Tesseract.dir/src/Sandbox/SandboxApp.cpp.s
+CMakeFiles/Tesseract.dir/src/Tesseract/TesseractApp.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Tesseract.dir/src/Tesseract/TesseractApp.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/media/ysera/Extreme SSD/sandbox/Tesseract/src/Tesseract/TesseractApp.cpp" -o CMakeFiles/Tesseract.dir/src/Tesseract/TesseractApp.cpp.s
 
 CMakeFiles/Tesseract.dir/src/core/Application.cpp.o: CMakeFiles/Tesseract.dir/flags.make
 CMakeFiles/Tesseract.dir/src/core/Application.cpp.o: src/core/Application.cpp
@@ -183,7 +183,7 @@ CMakeFiles/Tesseract.dir/src/main.cpp.s: cmake_force
 
 # Object files for target Tesseract
 Tesseract_OBJECTS = \
-"CMakeFiles/Tesseract.dir/src/Sandbox/SandboxApp.cpp.o" \
+"CMakeFiles/Tesseract.dir/src/Tesseract/TesseractApp.cpp.o" \
 "CMakeFiles/Tesseract.dir/src/core/Application.cpp.o" \
 "CMakeFiles/Tesseract.dir/src/core/EntryPoint.cpp.o" \
 "CMakeFiles/Tesseract.dir/src/core/ImGuiLayer.cpp.o" \
@@ -195,7 +195,7 @@ Tesseract_OBJECTS = \
 # External object files for target Tesseract
 Tesseract_EXTERNAL_OBJECTS =
 
-Tesseract: CMakeFiles/Tesseract.dir/src/Sandbox/SandboxApp.cpp.o
+Tesseract: CMakeFiles/Tesseract.dir/src/Tesseract/TesseractApp.cpp.o
 Tesseract: CMakeFiles/Tesseract.dir/src/core/Application.cpp.o
 Tesseract: CMakeFiles/Tesseract.dir/src/core/EntryPoint.cpp.o
 Tesseract: CMakeFiles/Tesseract.dir/src/core/ImGuiLayer.cpp.o
