@@ -1,11 +1,14 @@
-#include "core/Application.hpp"
-#include "core/Logger.hpp"
+#include <core/Core.hpp>
+#include <core/Application.hpp>
+#include <core/Logger.hpp>
+#include "Tesseract/SandboxLayer.hpp"
 
 namespace Tesseract {
     class TesseractApp : public Application {
     public:
-        TesseractApp() : Application("Tesseract") {
+        TesseractApp() : Application("Tesseract Sandbox") {
             Logger::Info("TesseractApp created!");
+            PushLayer(new SandboxLayer());
         }
 
         ~TesseractApp() {
