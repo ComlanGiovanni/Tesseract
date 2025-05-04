@@ -1,41 +1,40 @@
-cmake_minimum_required(VERSION 3.15)
-project(Tesseract VERSION 0.1.0 LANGUAGES CXX)
+cmake_minimum_required(VERSION 3.10)
+project(Tesseract)
 
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-# Options de compilation
-option(BUILD_TESTS "Build test programs" OFF)
-option(BUILD_DOCS "Build documentation" OFF)
+# Add spdlog as a subdirectory
+add_subdirectory(lib/spdlog)
 
-# Configuration des dépendances externes
-find_package(OpenGL REQUIRED)
+# Add ImGui as a subdirectory
+add_subdirectory(lib/imgui)
+
+# Find required packages
 find_package(SDL2 REQUIRED)
 find_package(GLEW REQUIRED)
 
-# Configuration des chemins d'inclusion
+# Include directories
 include_directories(
-    ${OPENGL_INCLUDE_DIR}
     ${SDL2_INCLUDE_DIRS}
     ${GLEW_INCLUDE_DIRS}
-    ${CMAKE_SOURCE_DIR}/include
-    ${CMAKE_SOURCE_DIR}/lib
-    ${CMAKE_SOURCE_DIR}/lib/imgui
-    ${CMAKE_SOURCE_DIR}/lib/imgui/backends
+    include
+    lib/spdlog/include
+    lib/imgui
 )
 
-# Configuration des sous-répertoires
-add_subdirectory(src)
-add_subdirectory(lib/imgui)
+# Source files
+file(GLOB_RECURSE SOURCES
+    "src/*.cpp"
+)
 
-# Configuration des options de compilation
-if(MSVC)
-    add_compile_options(/W4)
-else()
-    add_compile_options(-Wall -Wextra -Werror -Wpedantic)
-endif()
+# Create executable
+add_executable(Tesseract ${SOURCES})
 
-# Configuration des variables globales
-set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR})
-set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib)
-set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib)
+# Link libraries
+target_link_libraries(Tesseract
+    ${SDL2_LIBRARIES}
+    ${GLEW_LIBRARIES}
+    spdlog
+    imgui
+)
