@@ -260,6 +260,11 @@ src/CMakeFiles/tesseract.dir/main.cpp.o: ../src/main.cpp \
   /usr/include/c++/11/cstdint \
   /usr/include/GL/glu.h \
   /usr/include/GL/gl.h \
+  ../lib/imgui/imgui.h \
+  ../lib/imgui/imconfig.h \
+  /usr/include/assert.h \
+  ../lib/imgui/backends/imgui_impl_sdl2.h \
+  ../lib/imgui/backends/imgui_impl_opengl3.h \
   /usr/include/c++/11/iostream \
   /usr/include/c++/11/ostream \
   /usr/include/c++/11/ios \
@@ -466,6 +471,14 @@ src/CMakeFiles/tesseract.dir/main.cpp.o: ../src/main.cpp \
 /usr/include/c++/11/ios:
 
 /usr/include/c++/11/ostream:
+
+../lib/imgui/backends/imgui_impl_opengl3.h:
+
+../lib/imgui/backends/imgui_impl_sdl2.h:
+
+../lib/imgui/imconfig.h:
+
+../lib/imgui/imgui.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/float.h:
 
@@ -1014,6 +1027,8 @@ src/CMakeFiles/tesseract.dir/main.cpp.o: ../src/main.cpp \
 /usr/include/c++/11/bits/ostream.tcc:
 
 /usr/include/SDL2/SDL_mouse.h:
+
+/usr/include/assert.h:
 
 /usr/include/SDL2/SDL_joystick.h:
 
