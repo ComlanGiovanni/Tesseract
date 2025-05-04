@@ -25,7 +25,7 @@ int main(int argc, char* argv[]) {
         "Tesseract",
         SDL_WINDOWPOS_CENTERED,
         SDL_WINDOWPOS_CENTERED,
-        1280,
+        280,
         720,
         SDL_WINDOW_OPENGL | SDL_WINDOW_SHOWN | SDL_WINDOW_RESIZABLE
     );
