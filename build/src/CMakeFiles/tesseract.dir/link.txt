@@ -1,1 +1,1 @@
-/usr/bin/c++ CMakeFiles/tesseract.dir/main.cpp.o -o tesseract  /usr/lib/x86_64-linux-gnu/libSDL2.so /usr/lib/x86_64-linux-gnu/libSDL2main.a /usr/lib/x86_64-linux-gnu/libGLEW.so /usr/lib/x86_64-linux-gnu/libGLX.so /usr/lib/x86_64-linux-gnu/libOpenGL.so 
+/usr/bin/c++ CMakeFiles/tesseract.dir/main.cpp.o -o tesseract  /usr/lib/x86_64-linux-gnu/libSDL2main.a /usr/lib/x86_64-linux-gnu/libGLEW.so ../lib/imgui/libimgui.a /usr/lib/x86_64-linux-gnu/libGLX.so /usr/lib/x86_64-linux-gnu/libOpenGL.so /usr/lib/x86_64-linux-gnu/libSDL2.so 

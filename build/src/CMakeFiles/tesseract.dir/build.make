@@ -92,11 +92,12 @@ tesseract_EXTERNAL_OBJECTS =
 
 src/tesseract: src/CMakeFiles/tesseract.dir/main.cpp.o
 src/tesseract: src/CMakeFiles/tesseract.dir/build.make
-src/tesseract: /usr/lib/x86_64-linux-gnu/libSDL2.so
 src/tesseract: /usr/lib/x86_64-linux-gnu/libSDL2main.a
 src/tesseract: /usr/lib/x86_64-linux-gnu/libGLEW.so
+src/tesseract: lib/imgui/libimgui.a
 src/tesseract: /usr/lib/x86_64-linux-gnu/libGLX.so
 src/tesseract: /usr/lib/x86_64-linux-gnu/libOpenGL.so
+src/tesseract: /usr/lib/x86_64-linux-gnu/libSDL2.so
 src/tesseract: src/CMakeFiles/tesseract.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/media/ysera/Extreme SSD/sandbox/Tesseract/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable tesseract"
 	cd "/media/ysera/Extreme SSD/sandbox/Tesseract/build/src" && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/tesseract.dir/link.txt --verbose=$(VERBOSE)
