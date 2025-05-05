@@ -73,6 +73,8 @@ target_sources(Tesseract PRIVATE
     src/core/Renderer/OpenGLVertexArray.cpp
     src/core/Renderer/OpenGLRendererAPI.cpp
     src/core/Renderer/OpenGLTexture.cpp
+    # Système de ressources
+    src/core/Asset/AssetManager.cpp
     # Application spécifique
     src/Tesseract/TesseractApp.cpp
     src/Tesseract/TesseractLayer.cpp
