@@ -33,3 +33,23 @@
 
 # Main Executables
 *esseract
+
+# Build directory (CMake)
+build/
+
+# Executable
+Tesseract
+
+# CMake cache and generated files in root
+CMakeCache.txt
+CMakeFiles/
+Makefile
+cmake_install.cmake
+compile_commands.json
+
+# IDE files (example for VSCode)
+.vscode/
+
+# OS generated files
+.DS_Store
+Thumbs.db

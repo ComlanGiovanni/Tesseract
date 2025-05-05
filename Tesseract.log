@@ -1,300 +1,69 @@
-[01:08:38] [info] TESSERACT: Initializing Tesseract Engine...
-[01:08:38] [info] TESSERACT: Creating window Tesseract Sandbox (1280, 720)
-[01:08:38] [info] TESSERACT: OpenGL Info:
-[01:08:38] [info] TESSERACT:   Vendor: Intel
-[01:08:38] [info] TESSERACT:   Renderer: Mesa Intel(R) UHD Graphics 630 (CFL GT2)
-[01:08:38] [info] TESSERACT:   Version: 4.6 (Core Profile) Mesa 23.2.1-1ubuntu3.1~22.04.3
-[01:08:38] [info] TESSERACT: TesseractApp created!
-[01:08:38] [info] TESSERACT: SandboxLayer created!
-[01:08:38] [info] TESSERACT: SandboxLayer attached!
-[01:08:38] [info] TESSERACT: Starting main loop...
-[01:08:47] [trace] TESSERACT: Left mouse button pressed!
-[01:08:47] [trace] TESSERACT: Left mouse button pressed!
-[01:08:47] [trace] TESSERACT: Left mouse button pressed!
-[01:08:47] [trace] TESSERACT: Left mouse button pressed!
-[01:08:47] [trace] TESSERACT: Left mouse button pressed!
-[01:08:47] [trace] TESSERACT: Left mouse button pressed!
-[01:08:47] [trace] TESSERACT: Left mouse button pressed!
-[01:08:47] [trace] TESSERACT: Left mouse button pressed!
-[01:08:47] [trace] TESSERACT: Left mouse button pressed!
-[01:08:47] [trace] TESSERACT: Left mouse button pressed!
-[01:08:47] [trace] TESSERACT: Left mouse button pressed!
-[01:08:47] [trace] TESSERACT: Left mouse button pressed!
-[01:08:47] [trace] TESSERACT: Left mouse button pressed!
-[01:08:47] [trace] TESSERACT: Left mouse button pressed!
-[01:08:47] [trace] TESSERACT: Left mouse button pressed!
-[01:08:47] [trace] TESSERACT: Left mouse button pressed!
-[01:08:47] [trace] TESSERACT: Left mouse button pressed!
-[01:08:47] [trace] TESSERACT: Left mouse button pressed!
-[01:08:47] [trace] TESSERACT: Left mouse button pressed!
-[01:08:47] [trace] TESSERACT: Left mouse button pressed!
-[01:08:47] [trace] TESSERACT: Left mouse button pressed!
-[01:08:47] [trace] TESSERACT: Left mouse button pressed!
-[01:08:47] [trace] TESSERACT: Left mouse button pressed!
-[01:08:47] [trace] TESSERACT: Left mouse button pressed!
-[01:08:47] [trace] TESSERACT: Left mouse button pressed!
-[01:08:47] [trace] TESSERACT: Left mouse button pressed!
-[01:08:47] [trace] TESSERACT: Left mouse button pressed!
-[01:08:47] [trace] TESSERACT: Left mouse button pressed!
-[01:08:47] [trace] TESSERACT: Left mouse button pressed!
-[01:08:47] [trace] TESSERACT: Left mouse button pressed!
-[01:08:47] [trace] TESSERACT: Left mouse button pressed!
-[01:08:47] [trace] TESSERACT: Left mouse button pressed!
-[01:08:47] [trace] TESSERACT: Left mouse button pressed!
-[01:08:47] [trace] TESSERACT: Left mouse button pressed!
-[01:08:47] [trace] TESSERACT: Left mouse button pressed!
-[01:08:47] [trace] TESSERACT: Left mouse button pressed!
-[01:08:47] [trace] TESSERACT: Left mouse button pressed!
-[01:08:47] [trace] TESSERACT: Left mouse button pressed!
-[01:08:47] [trace] TESSERACT: Left mouse button pressed!
-[01:08:47] [trace] TESSERACT: Left mouse button pressed!
-[01:08:48] [trace] TESSERACT: Left mouse button pressed!
-[01:08:48] [trace] TESSERACT: Left mouse button pressed!
-[01:08:48] [trace] TESSERACT: Left mouse button pressed!
-[01:08:48] [trace] TESSERACT: Left mouse button pressed!
-[01:08:48] [trace] TESSERACT: Left mouse button pressed!
-[01:08:48] [trace] TESSERACT: Left mouse button pressed!
-[01:08:48] [trace] TESSERACT: Left mouse button pressed!
-[01:08:48] [trace] TESSERACT: Left mouse button pressed!
-[01:08:48] [trace] TESSERACT: Left mouse button pressed!
-[01:08:48] [trace] TESSERACT: Left mouse button pressed!
-[01:08:49] [trace] TESSERACT: Left mouse button pressed!
-[01:08:49] [trace] TESSERACT: Left mouse button pressed!
-[01:08:49] [trace] TESSERACT: Left mouse button pressed!
-[01:08:49] [trace] TESSERACT: Left mouse button pressed!
-[01:08:49] [trace] TESSERACT: Left mouse button pressed!
-[01:08:49] [trace] TESSERACT: Left mouse button pressed!
-[01:08:49] [trace] TESSERACT: Left mouse button pressed!
-[01:08:49] [trace] TESSERACT: Left mouse button pressed!
-[01:08:49] [trace] TESSERACT: Left mouse button pressed!
-[01:08:49] [trace] TESSERACT: Left mouse button pressed!
-[01:08:49] [trace] TESSERACT: Left mouse button pressed!
-[01:08:49] [trace] TESSERACT: Left mouse button pressed!
-[01:08:49] [trace] TESSERACT: Left mouse button pressed!
-[01:08:49] [trace] TESSERACT: Left mouse button pressed!
-[01:08:49] [trace] TESSERACT: Left mouse button pressed!
-[01:08:49] [trace] TESSERACT: Left mouse button pressed!
-[01:08:49] [trace] TESSERACT: Left mouse button pressed!
-[01:08:49] [trace] TESSERACT: Left mouse button pressed!
-[01:08:50] [trace] TESSERACT: Left mouse button pressed!
-[01:08:50] [trace] TESSERACT: Left mouse button pressed!
-[01:08:50] [trace] TESSERACT: Left mouse button pressed!
-[01:08:50] [trace] TESSERACT: Left mouse button pressed!
-[01:08:50] [trace] TESSERACT: Left mouse button pressed!
-[01:08:50] [trace] TESSERACT: Left mouse button pressed!
-[01:08:50] [trace] TESSERACT: Left mouse button pressed!
-[01:08:50] [trace] TESSERACT: Left mouse button pressed!
-[01:08:50] [trace] TESSERACT: Left mouse button pressed!
-[01:08:50] [trace] TESSERACT: Left mouse button pressed!
-[01:08:50] [trace] TESSERACT: Left mouse button pressed!
-[01:08:50] [trace] TESSERACT: Left mouse button pressed!
-[01:08:50] [trace] TESSERACT: Left mouse button pressed!
-[01:08:50] [trace] TESSERACT: Left mouse button pressed!
-[01:08:50] [trace] TESSERACT: Left mouse button pressed!
-[01:08:50] [trace] TESSERACT: Left mouse button pressed!
-[01:08:50] [trace] TESSERACT: Left mouse button pressed!
-[01:08:50] [trace] TESSERACT: Left mouse button pressed!
-[01:08:50] [trace] TESSERACT: Left mouse button pressed!
-[01:08:50] [trace] TESSERACT: Left mouse button pressed!
-[01:08:50] [trace] TESSERACT: Left mouse button pressed!
-[01:08:50] [trace] TESSERACT: Left mouse button pressed!
-[01:08:50] [trace] TESSERACT: Left mouse button pressed!
-[01:08:50] [trace] TESSERACT: Left mouse button pressed!
-[01:08:50] [trace] TESSERACT: Left mouse button pressed!
-[01:08:51] [trace] TESSERACT: Left mouse button pressed!
-[01:08:51] [trace] TESSERACT: Left mouse button pressed!
-[01:08:51] [trace] TESSERACT: Left mouse button pressed!
-[01:08:51] [trace] TESSERACT: Left mouse button pressed!
-[01:08:51] [trace] TESSERACT: Left mouse button pressed!
-[01:08:51] [trace] TESSERACT: Left mouse button pressed!
-[01:08:51] [trace] TESSERACT: Left mouse button pressed!
-[01:08:51] [trace] TESSERACT: Left mouse button pressed!
-[01:08:51] [trace] TESSERACT: Left mouse button pressed!
-[01:08:51] [trace] TESSERACT: Left mouse button pressed!
-[01:08:51] [trace] TESSERACT: Left mouse button pressed!
-[01:08:51] [trace] TESSERACT: Left mouse button pressed!
-[01:08:51] [trace] TESSERACT: Left mouse button pressed!
-[01:08:51] [trace] TESSERACT: Left mouse button pressed!
-[01:08:51] [trace] TESSERACT: Left mouse button pressed!
-[01:08:51] [trace] TESSERACT: Left mouse button pressed!
-[01:08:51] [trace] TESSERACT: Left mouse button pressed!
-[01:08:51] [trace] TESSERACT: Left mouse button pressed!
-[01:08:51] [trace] TESSERACT: Left mouse button pressed!
-[01:08:51] [trace] TESSERACT: Left mouse button pressed!
-[01:08:51] [trace] TESSERACT: Left mouse button pressed!
-[01:08:51] [trace] TESSERACT: Left mouse button pressed!
-[01:08:51] [trace] TESSERACT: Left mouse button pressed!
-[01:08:51] [trace] TESSERACT: Left mouse button pressed!
-[01:08:51] [trace] TESSERACT: Left mouse button pressed!
-[01:08:51] [trace] TESSERACT: Left mouse button pressed!
-[01:08:51] [trace] TESSERACT: Left mouse button pressed!
-[01:08:51] [trace] TESSERACT: Left mouse button pressed!
-[01:08:51] [trace] TESSERACT: Left mouse button pressed!
-[01:08:53] [trace] TESSERACT: Left mouse button pressed!
-[01:08:53] [trace] TESSERACT: Left mouse button pressed!
-[01:08:53] [trace] TESSERACT: Left mouse button pressed!
-[01:08:53] [trace] TESSERACT: Left mouse button pressed!
-[01:08:53] [trace] TESSERACT: Left mouse button pressed!
-[01:08:54] [trace] TESSERACT: Left mouse button pressed!
-[01:08:54] [trace] TESSERACT: Left mouse button pressed!
-[01:08:54] [trace] TESSERACT: Left mouse button pressed!
-[01:08:54] [trace] TESSERACT: Left mouse button pressed!
-[01:08:54] [trace] TESSERACT: Left mouse button pressed!
-[01:08:54] [trace] TESSERACT: Left mouse button pressed!
-[01:08:54] [trace] TESSERACT: Left mouse button pressed!
-[01:08:54] [trace] TESSERACT: Left mouse button pressed!
-[01:08:54] [trace] TESSERACT: Left mouse button pressed!
-[01:08:54] [trace] TESSERACT: Left mouse button pressed!
-[01:08:54] [trace] TESSERACT: Left mouse button pressed!
-[01:08:54] [trace] TESSERACT: Left mouse button pressed!
-[01:08:54] [trace] TESSERACT: Left mouse button pressed!
-[01:08:54] [trace] TESSERACT: Left mouse button pressed!
-[01:08:54] [trace] TESSERACT: Left mouse button pressed!
-[01:08:54] [trace] TESSERACT: Left mouse button pressed!
-[01:08:54] [trace] TESSERACT: Left mouse button pressed!
-[01:08:54] [trace] TESSERACT: Left mouse button pressed!
-[01:08:54] [trace] TESSERACT: Left mouse button pressed!
-[01:08:54] [trace] TESSERACT: Left mouse button pressed!
-[01:08:54] [trace] TESSERACT: Left mouse button pressed!
-[01:08:54] [trace] TESSERACT: Left mouse button pressed!
-[01:08:54] [trace] TESSERACT: Left mouse button pressed!
-[01:08:54] [trace] TESSERACT: Left mouse button pressed!
-[01:08:54] [trace] TESSERACT: Left mouse button pressed!
-[01:08:54] [trace] TESSERACT: Left mouse button pressed!
-[01:08:54] [trace] TESSERACT: Left mouse button pressed!
-[01:08:54] [trace] TESSERACT: Left mouse button pressed!
-[01:08:54] [trace] TESSERACT: Left mouse button pressed!
-[01:08:54] [trace] TESSERACT: Left mouse button pressed!
-[01:08:54] [trace] TESSERACT: Left mouse button pressed!
-[01:08:54] [trace] TESSERACT: Left mouse button pressed!
-[01:08:54] [trace] TESSERACT: Left mouse button pressed!
-[01:08:54] [trace] TESSERACT: Left mouse button pressed!
-[01:08:54] [trace] TESSERACT: Left mouse button pressed!
-[01:08:54] [trace] TESSERACT: Left mouse button pressed!
-[01:08:54] [trace] TESSERACT: Left mouse button pressed!
-[01:08:54] [trace] TESSERACT: Left mouse button pressed!
-[01:08:54] [trace] TESSERACT: Left mouse button pressed!
-[01:08:54] [trace] TESSERACT: Left mouse button pressed!
-[01:08:54] [trace] TESSERACT: Left mouse button pressed!
-[01:08:54] [trace] TESSERACT: Left mouse button pressed!
-[01:08:54] [trace] TESSERACT: Left mouse button pressed!
-[01:08:54] [trace] TESSERACT: Left mouse button pressed!
-[01:08:54] [trace] TESSERACT: Left mouse button pressed!
-[01:08:54] [trace] TESSERACT: Left mouse button pressed!
-[01:08:54] [trace] TESSERACT: Left mouse button pressed!
-[01:08:54] [trace] TESSERACT: Left mouse button pressed!
-[01:08:54] [trace] TESSERACT: Left mouse button pressed!
-[01:08:54] [trace] TESSERACT: Left mouse button pressed!
-[01:08:54] [trace] TESSERACT: Left mouse button pressed!
-[01:08:54] [trace] TESSERACT: Left mouse button pressed!
-[01:08:54] [trace] TESSERACT: Left mouse button pressed!
-[01:08:54] [trace] TESSERACT: Left mouse button pressed!
-[01:08:54] [trace] TESSERACT: Left mouse button pressed!
-[01:08:54] [trace] TESSERACT: Left mouse button pressed!
-[01:08:54] [trace] TESSERACT: Left mouse button pressed!
-[01:08:54] [trace] TESSERACT: Left mouse button pressed!
-[01:08:54] [trace] TESSERACT: Left mouse button pressed!
-[01:08:54] [trace] TESSERACT: Left mouse button pressed!
-[01:08:55] [trace] TESSERACT: Left mouse button pressed!
-[01:08:55] [trace] TESSERACT: Left mouse button pressed!
-[01:08:55] [trace] TESSERACT: Left mouse button pressed!
-[01:08:55] [trace] TESSERACT: Left mouse button pressed!
-[01:08:55] [trace] TESSERACT: Left mouse button pressed!
-[01:08:55] [trace] TESSERACT: Left mouse button pressed!
-[01:08:55] [trace] TESSERACT: Left mouse button pressed!
-[01:08:55] [trace] TESSERACT: Left mouse button pressed!
-[01:08:55] [trace] TESSERACT: Left mouse button pressed!
-[01:08:55] [trace] TESSERACT: Left mouse button pressed!
-[01:08:55] [trace] TESSERACT: Left mouse button pressed!
-[01:08:55] [trace] TESSERACT: Left mouse button pressed!
-[01:08:55] [trace] TESSERACT: Left mouse button pressed!
-[01:08:55] [trace] TESSERACT: Left mouse button pressed!
-[01:08:55] [trace] TESSERACT: Left mouse button pressed!
-[01:08:55] [trace] TESSERACT: Left mouse button pressed!
-[01:08:55] [trace] TESSERACT: Left mouse button pressed!
-[01:08:55] [trace] TESSERACT: Left mouse button pressed!
-[01:08:55] [trace] TESSERACT: Left mouse button pressed!
-[01:08:55] [trace] TESSERACT: Left mouse button pressed!
-[01:08:58] [trace] TESSERACT: Left mouse button pressed!
-[01:08:58] [trace] TESSERACT: Left mouse button pressed!
-[01:08:58] [trace] TESSERACT: Left mouse button pressed!
-[01:08:58] [trace] TESSERACT: Left mouse button pressed!
-[01:08:58] [trace] TESSERACT: Left mouse button pressed!
-[01:09:00] [trace] TESSERACT: Left mouse button pressed!
-[01:09:00] [trace] TESSERACT: Left mouse button pressed!
-[01:09:00] [trace] TESSERACT: Left mouse button pressed!
-[01:09:00] [trace] TESSERACT: Left mouse button pressed!
-[01:09:00] [trace] TESSERACT: Left mouse button pressed!
-[01:09:00] [trace] TESSERACT: Left mouse button pressed!
-[01:09:00] [trace] TESSERACT: Left mouse button pressed!
-[01:09:00] [trace] TESSERACT: Left mouse button pressed!
-[01:09:00] [trace] TESSERACT: Left mouse button pressed!
-[01:09:01] [trace] TESSERACT: Left mouse button pressed!
-[01:09:01] [trace] TESSERACT: Left mouse button pressed!
-[01:09:01] [trace] TESSERACT: Left mouse button pressed!
-[01:09:01] [trace] TESSERACT: Left mouse button pressed!
-[01:09:01] [trace] TESSERACT: Left mouse button pressed!
-[01:09:09] [trace] TESSERACT: Left mouse button pressed!
-[01:09:09] [trace] TESSERACT: Left mouse button pressed!
-[01:09:09] [trace] TESSERACT: Left mouse button pressed!
-[01:09:09] [trace] TESSERACT: Left mouse button pressed!
-[01:09:09] [trace] TESSERACT: Left mouse button pressed!
-[01:09:09] [trace] TESSERACT: W key pressed! (Timestep: %.4f s)
-[01:09:09] [trace] TESSERACT: W key pressed! (Timestep: %.4f s)
-[01:09:09] [trace] TESSERACT: W key pressed! (Timestep: %.4f s)
-[01:09:09] [trace] TESSERACT: W key pressed! (Timestep: %.4f s)
-[01:09:09] [trace] TESSERACT: W key pressed! (Timestep: %.4f s)
-[01:09:09] [trace] TESSERACT: W key pressed! (Timestep: %.4f s)
-[01:09:09] [trace] TESSERACT: W key pressed! (Timestep: %.4f s)
-[01:09:09] [trace] TESSERACT: W key pressed! (Timestep: %.4f s)
-[01:09:10] [trace] TESSERACT: Left mouse button pressed!
-[01:09:10] [trace] TESSERACT: Left mouse button pressed!
-[01:09:10] [trace] TESSERACT: Left mouse button pressed!
-[01:09:10] [trace] TESSERACT: Left mouse button pressed!
-[01:09:10] [trace] TESSERACT: Left mouse button pressed!
-[01:09:10] [trace] TESSERACT: Left mouse button pressed!
-[01:09:10] [trace] TESSERACT: W key pressed! (Timestep: %.4f s)
-[01:09:10] [trace] TESSERACT: W key pressed! (Timestep: %.4f s)
-[01:09:11] [trace] TESSERACT: W key pressed! (Timestep: %.4f s)
-[01:09:11] [trace] TESSERACT: W key pressed! (Timestep: %.4f s)
-[01:09:11] [trace] TESSERACT: W key pressed! (Timestep: %.4f s)
-[01:09:11] [trace] TESSERACT: W key pressed! (Timestep: %.4f s)
-[01:09:11] [trace] TESSERACT: W key pressed! (Timestep: %.4f s)
-[01:09:11] [trace] TESSERACT: W key pressed! (Timestep: %.4f s)
-[01:09:11] [trace] TESSERACT: W key pressed! (Timestep: %.4f s)
-[01:09:11] [trace] TESSERACT: W key pressed! (Timestep: %.4f s)
-[01:09:11] [trace] TESSERACT: W key pressed! (Timestep: %.4f s)
-[01:09:11] [trace] TESSERACT: W key pressed! (Timestep: %.4f s)
-[01:09:11] [trace] TESSERACT: W key pressed! (Timestep: %.4f s)
-[01:09:11] [trace] TESSERACT: W key pressed! (Timestep: %.4f s)
-[01:09:11] [trace] TESSERACT: W key pressed! (Timestep: %.4f s)
-[01:09:11] [trace] TESSERACT: W key pressed! (Timestep: %.4f s)
-[01:09:11] [trace] TESSERACT: W key pressed! (Timestep: %.4f s)
-[01:09:11] [trace] TESSERACT: W key pressed! (Timestep: %.4f s)
-[01:09:11] [trace] TESSERACT: W key pressed! (Timestep: %.4f s)
-[01:09:11] [trace] TESSERACT: W key pressed! (Timestep: %.4f s)
-[01:09:11] [trace] TESSERACT: W key pressed! (Timestep: %.4f s)
-[01:09:11] [trace] TESSERACT: W key pressed! (Timestep: %.4f s)
-[01:09:11] [trace] TESSERACT: W key pressed! (Timestep: %.4f s)
-[01:09:11] [trace] TESSERACT: W key pressed! (Timestep: %.4f s)
-[01:09:11] [trace] TESSERACT: W key pressed! (Timestep: %.4f s)
-[01:09:12] [trace] TESSERACT: Left mouse button pressed!
-[01:09:12] [trace] TESSERACT: Left mouse button pressed!
-[01:09:12] [trace] TESSERACT: Left mouse button pressed!
-[01:09:12] [trace] TESSERACT: Left mouse button pressed!
-[01:09:12] [trace] TESSERACT: Left mouse button pressed!
-[01:09:12] [trace] TESSERACT: Left mouse button pressed!
-[01:09:12] [trace] TESSERACT: Left mouse button pressed!
-[01:09:13] [trace] TESSERACT: Left mouse button pressed!
-[01:09:13] [trace] TESSERACT: Left mouse button pressed!
-[01:09:13] [trace] TESSERACT: Left mouse button pressed!
-[01:09:13] [trace] TESSERACT: Left mouse button pressed!
-[01:09:13] [trace] TESSERACT: Left mouse button pressed!
-[01:09:13] [trace] TESSERACT: Left mouse button pressed!
-[01:09:13] [trace] TESSERACT: Left mouse button pressed!
-[01:09:13] [trace] TESSERACT: Left mouse button pressed!
-[01:09:13] [trace] TESSERACT: Left mouse button pressed!
-[01:09:13] [trace] TESSERACT: Left mouse button pressed!
-[01:09:16] [info] TESSERACT: TesseractApp destroyed!
-[01:09:16] [info] TESSERACT: Shutting down Tesseract Engine...
-[01:09:16] [info] TESSERACT: SandboxLayer detached!
+[03:59:24] [warning] TESSERACT: Initialized Core Logger
+[03:59:24] [info] APP: Initialized Client Logger
+[03:59:24] [info] TESSERACT: Creating Application: Tesseract Sandbox
+[03:59:24] [info] TESSERACT: Initializing Window: Tesseract Sandbox (1600, 900)
+[03:59:24] [info] TESSERACT: GLEW Initialized.
+[03:59:24] [info] TESSERACT: OpenGL Info:
+[03:59:24] [info] TESSERACT:   Vendor: Intel
+[03:59:24] [info] TESSERACT:   Renderer: Mesa Intel(R) UHD Graphics 630 (CFL GT2)
+[03:59:24] [info] TESSERACT:   Version: 4.6 (Core Profile) Mesa 23.2.1-1ubuntu3.1~22.04.3
+[03:59:24] [info] TESSERACT: Window initialized successfully.
+[03:59:24] [info] TESSERACT: Initializing OpenGL RendererAPI...
+[03:59:24] [info] TESSERACT: Initializing Renderer2D...
+[03:59:24] [trace] TESSERACT: Created OpenGL VertexArray (ID: 1)
+[03:59:24] [trace] TESSERACT: Created dynamic OpenGL VertexBuffer (ID: 1)
+[03:59:24] [trace] TESSERACT:   Added VBO attribute index 0, type 3, count 3, stride 28, offset 0
+[03:59:24] [trace] TESSERACT:   Added VBO attribute index 1, type 4, count 4, stride 28, offset 12
+[03:59:24] [trace] TESSERACT: Created OpenGL IndexBuffer (ID: 2) with count 60000
+[03:59:24] [trace] TESSERACT: Set IndexBuffer (ID: (TODO: Get IBO ID)) for VAO (ID: 1)
+[03:59:24] [trace] TESSERACT: Compiling shaders from file: ../assets/shaders/Texture.glsl
+[03:59:24] [trace] TESSERACT: --- Compiling Fragment Shader Source ---
+[03:59:24] [trace] TESSERACT:   1: #version 330 core
+[03:59:24] [trace] TESSERACT:   2: 
+[03:59:24] [trace] TESSERACT:   3: layout(out) out vec4 color;
+[03:59:24] [trace] TESSERACT:   4: 
+[03:59:24] [trace] TESSERACT:   5: in vec4 v_Color;
+[03:59:24] [trace] TESSERACT:   6: // in vec2 v_TexCoord;
+[03:59:24] [trace] TESSERACT:   7: // in float v_TexIndex;
+[03:59:24] [trace] TESSERACT:   8: // in float v_TilingFactor;
+[03:59:24] [trace] TESSERACT:   9: 
+[03:59:24] [trace] TESSERACT:  10: 
+[03:59:24] [trace] TESSERACT:  11: // uniform sampler2D u_Textures[32]; // Max texture slots
+[03:59:24] [trace] TESSERACT:  12: 
+[03:59:24] [trace] TESSERACT:  13: void main()
+[03:59:24] [trace] TESSERACT:  14: {
+[03:59:24] [trace] TESSERACT:  15:     // Pour l'instant, on utilise juste la couleur pass??e par le vertex shader
+[03:59:24] [trace] TESSERACT:  16:     color = v_Color;
+[03:59:24] [trace] TESSERACT:  17: 
+[03:59:24] [trace] TESSERACT:  18:     // Exemple futur avec textures:
+[03:59:24] [trace] TESSERACT:  19:     /*
+[03:59:24] [trace] TESSERACT:  20:     switch(int(v_TexIndex))
+[03:59:24] [trace] TESSERACT:  21:     {
+[03:59:24] [trace] TESSERACT:  22:         // Cas pour chaque slot de texture... fastidieux sans 'non-uniform qualifier'
+[03:59:24] [trace] TESSERACT:  23:         // Une approche plus simple (mais moins flexible) est d'avoir un seul sampler et de le changer par draw call.
+[03:59:24] [trace] TESSERACT:  24:         // Ou utiliser des Texture Arrays (GL_TEXTURE_2D_ARRAY) si toutes les textures ont la m??me taille/format.
+[03:59:24] [trace] TESSERACT:  25:         // Le plus courant pour le batching 2D est d'utiliser un tableau de samplers.
+[03:59:24] [trace] TESSERACT:  26:         case 0: color = texture(u_Textures[0], v_TexCoord * v_TilingFactor) * v_Color; break;
+[03:59:24] [trace] TESSERACT:  27:         case 1: color = texture(u_Textures[1], v_TexCoord * v_TilingFactor) * v_Color; break;
+[03:59:24] [trace] TESSERACT:  28:         // ... jusqu'?? 31
+[03:59:24] [trace] TESSERACT:  29:         default: color = vec4(1.0, 0.0, 1.0, 1.0); // Rose = Erreur
+[03:59:24] [trace] TESSERACT:  30:     }
+[03:59:24] [trace] TESSERACT:  31:     */
+[03:59:24] [trace] TESSERACT:  32: 
+[03:59:24] [trace] TESSERACT:  33:     // Alternative simple (si on n'utilise qu'une seule texture + couleur unie via WhiteTexture)
+[03:59:24] [trace] TESSERACT:  34:     // float texIndex = v_TexIndex; // Ou 0.0 si couleur unie
+[03:59:24] [trace] TESSERACT:  35:     // vec4 texColor = texture(u_Textures[int(texIndex)], v_TexCoord * v_TilingFactor);
+[03:59:24] [trace] TESSERACT:  36:     // color = texColor * v_Color;
+[03:59:24] [trace] TESSERACT:  37: 
+[03:59:24] [trace] TESSERACT:  38: }
+[03:59:24] [trace] TESSERACT: --- End Fragment Shader Source ---
+[03:59:24] [error] TESSERACT: Fragment shader compilation failure!
+[03:59:24] [error] TESSERACT: 0:3(8): error: syntax error, unexpected OUT_TOK
+
+[03:59:24] [info] TESSERACT: Attaching ImGuiLayer...
+[03:59:24] [info] TESSERACT: ImGuiLayer Attached and Initialized.
+[03:59:24] [info] APP: TesseractApp created!
+[03:59:24] [info] APP: TesseractLayer created!
+[03:59:24] [debug] TESSERACT: TesseractLayer attached.
+[03:59:24] [info] TESSERACT: Application created, running...
+[03:59:24] [info] TESSERACT: Starting Application Run Loop...

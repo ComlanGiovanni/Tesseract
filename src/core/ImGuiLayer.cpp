@@ -78,11 +78,19 @@ namespace Tesseract {
     }
 
     void ImGuiLayer::OnEvent(Event& event) {
-        if (event.IsInCategory(EventCategory::EventCategoryInput)) {
-            ImGuiIO& io = ImGui::GetIO();
-            event.Handled |= io.WantCaptureMouse;
-            event.Handled |= io.WantCaptureKeyboard;
-        }
+        // Note: ImGui_ImplSDL2_ProcessEvent est déjà appelé dans Window::OnUpdate
+        // avant que cet événement ne soit distribué.
+        // Nous vérifions juste si ImGui veut capturer l'input pour marquer
+        // l'événement comme Handled et empêcher sa propagation aux autres couches.
+
+        ImGuiIO& io = ImGui::GetIO();
+        event.Handled |= event.IsInCategory(EventCategoryMouse) & io.WantCaptureMouse;
+        event.Handled |= event.IsInCategory(EventCategoryKeyboard) & io.WantCaptureKeyboard;
+
+        // On pourrait utiliser EventDispatcher ici si on voulait réagir spécifiquement
+        // à certains types d'événements DANS ImGuiLayer (ex: un raccourci clavier
+        // pour ouvrir/fermer une fenêtre ImGui), mais ce n'est pas nécessaire pour
+        // juste passer les inputs à ImGui.
     }
 
     void ImGuiLayer::Begin() {

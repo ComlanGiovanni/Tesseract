@@ -1,5 +1,6 @@
 #pragma once
 
+#include "core/Core.hpp"
 #include <string>
 #include <functional>
 
@@ -38,19 +39,22 @@ namespace Tesseract {
         virtual int GetCategoryFlags() const = 0;
         virtual std::string ToString() const { return GetName(); }
 
-        bool IsInCategory(EventCategory category) {
+        inline bool IsInCategory(EventCategory category) {
             return GetCategoryFlags() & category;
         }
     };
 
     class EventDispatcher {
+        template<typename T>
+        using EventFn = std::function<bool(T&)>;
     public:
-        EventDispatcher(Event& event) : m_Event(event) {}
+        EventDispatcher(Event& event)
+            : m_Event(event) {}
 
-        template<typename T, typename F>
-        bool Dispatch(const F& func) {
+        template<typename T>
+        bool Dispatch(EventFn<T> func) {
             if (m_Event.GetEventType() == T::GetStaticType()) {
-                m_Event.Handled = func(static_cast<T&>(m_Event));
+                m_Event.Handled = func(*(T*)&m_Event);
                 return true;
             }
             return false;
@@ -59,4 +63,8 @@ namespace Tesseract {
     private:
         Event& m_Event;
     };
+
+    inline std::ostream& operator<<(std::ostream& os, const Event& e) {
+        return os << e.ToString();
+    }
 }

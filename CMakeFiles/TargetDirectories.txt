@@ -1,9 +1,0 @@
-/media/ysera/Extreme SSD/sandbox/Tesseract/CMakeFiles/Tesseract.dir
-/media/ysera/Extreme SSD/sandbox/Tesseract/CMakeFiles/edit_cache.dir
-/media/ysera/Extreme SSD/sandbox/Tesseract/CMakeFiles/rebuild_cache.dir
-/media/ysera/Extreme SSD/sandbox/Tesseract/lib/spdlog/CMakeFiles/spdlog.dir
-/media/ysera/Extreme SSD/sandbox/Tesseract/lib/spdlog/CMakeFiles/edit_cache.dir
-/media/ysera/Extreme SSD/sandbox/Tesseract/lib/spdlog/CMakeFiles/rebuild_cache.dir
-/media/ysera/Extreme SSD/sandbox/Tesseract/lib/imgui/CMakeFiles/imgui.dir
-/media/ysera/Extreme SSD/sandbox/Tesseract/lib/imgui/CMakeFiles/edit_cache.dir
-/media/ysera/Extreme SSD/sandbox/Tesseract/lib/imgui/CMakeFiles/rebuild_cache.dir

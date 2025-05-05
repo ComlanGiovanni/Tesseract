@@ -1,36 +1,48 @@
 #pragma once
 
-#include <memory>
-#include <string>
-#include <vector>
+#include "core/Core.hpp"
 #include "core/Window.hpp"
-#include "core/Logger.hpp"
-#include "core/Layer.hpp"
-#include "core/ImGuiLayer.hpp"
+#include "core/LayerStack.hpp"
+#include "core/Event.hpp"
+#include "core/Events/ApplicationEvent.hpp"
+#include "core/ImGui/ImGuiLayer.hpp"
+
+#include <string>
+#include <memory>
 
 namespace Tesseract {
+
     class Application {
     public:
-        Application(const std::string& name = "Tesseract");
+        Application(const std::string& name = "Tesseract App");
         virtual ~Application();
 
         void Run();
         void Close();
 
-        void PushLayer(Layer* layer);
-        void PushOverlay(Layer* overlay);
+        void OnEvent(Event& e);
 
-        static Application& Get() { return *s_Instance; }
-        Window& GetWindow() { return *m_Window; }
+        void PushLayer(Ref<Layer> layer);
+        void PushOverlay(Ref<Layer> overlay);
+
+        inline Window& GetWindow() { return *m_Window; }
+        inline static Application& Get() { return *s_Instance; }
 
     private:
-        static Application* s_Instance;
-        std::unique_ptr<Window> m_Window;
+        // Méthodes de gestion d'événements internes
+        bool OnWindowClose(WindowCloseEvent& e);
+        bool OnWindowResize(WindowResizeEvent& e);
+
+        Scope<Window> m_Window;
+        Ref<ImGuiLayer> m_ImGuiLayer;
         bool m_Running = true;
-        std::vector<Layer*> m_LayerStack;
-        ImGuiLayer* m_ImGuiLayer;
+        bool m_Minimized = false;
+        LayerStack m_LayerStack;
+        float m_LastFrameTime = 0.0f;
+
+        static Application* s_Instance;
     };
 
-    // Déclaration de la fonction à implémenter par l'application cliente
     Application* CreateApplication();
+
 }
