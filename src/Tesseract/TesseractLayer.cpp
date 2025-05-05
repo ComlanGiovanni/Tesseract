@@ -92,7 +92,11 @@ namespace Tesseract {
 
             ImGui::Separator();
             ImGui::Text("Couleur de fond");
-            ImGui::ColorEdit4("Background Color", glm::value_ptr(m_BackgroundColor));
+
+            // Utiliser glm::value_ptr pour accéder directement aux composantes de la couleur
+            ImGui::ColorPicker4("Background Color", glm::value_ptr(m_BackgroundColor),
+                ImGuiColorEditFlags_DisplayRGB | ImGuiColorEditFlags_DisplayHex |
+                ImGuiColorEditFlags_PickerHueWheel | ImGuiColorEditFlags_AlphaBar);
 
             if (ImGui::Button("Reset Settings")) {
                 m_DebugWindowSize = ImVec2(400, 300);
@@ -111,7 +115,25 @@ namespace Tesseract {
         ImGui::Separator();
         ImGui::Text("Camera Position: (%.2f, %.2f, %.2f)", m_Camera.GetPosition().x, m_Camera.GetPosition().y, m_Camera.GetPosition().z);
         ImGui::Text("Camera Rotation: %.2f deg", m_Camera.GetRotation());
-        ImGui::ColorEdit4("Square Color", glm::value_ptr(m_SquareColor));
+
+        // Convertir glm::vec4 en ImVec4 pour le ColorButton
+        ImVec4 squareColorImGui(m_SquareColor.r, m_SquareColor.g, m_SquareColor.b, m_SquareColor.a);
+        if (ImGui::ColorButton("Square Color Button", squareColorImGui, ImGuiColorEditFlags_AlphaPreview, ImVec2(50, 20)))
+            ImGui::OpenPopup("square_color_picker");
+
+        ImGui::SameLine();
+        ImGui::Text("Square Color");
+
+        // Popup pour le sélecteur de couleur avancé
+        if (ImGui::BeginPopup("square_color_picker")) {
+            ImGui::Text("Couleur du carré");
+            ImGui::Separator();
+            ImGui::ColorPicker4("##picker", glm::value_ptr(m_SquareColor),
+                ImGuiColorEditFlags_DisplayRGB | ImGuiColorEditFlags_DisplayHex |
+                ImGuiColorEditFlags_PickerHueWheel | ImGuiColorEditFlags_AlphaBar);
+            ImGui::EndPopup();
+        }
+
         if (ImGui::Button("Reset Camera")) {
             m_Camera.SetPosition({0.0f, 0.0f, 0.0f});
             m_Camera.SetRotation(0.0f);
