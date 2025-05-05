@@ -17,14 +17,11 @@ void main()
 #type fragment
 #version 330 core
 
-// out vec4 FragColor; // Remplacé par gl_FragColor pour tester
+out vec4 FragColor;
 
 in vec4 v_Color;
 
-// uniform sampler2D u_Texture; // On l'utilisera plus tard
-
 void main()
 {
-    // FragColor = v_Color;
-    gl_FragColor = vec4(1.0, 0.0, 1.0, 1.0); // Couleur fixe magenta pour test
+    FragColor = v_Color;
 }

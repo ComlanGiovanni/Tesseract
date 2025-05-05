@@ -177,7 +177,9 @@ namespace Tesseract {
                 }
             }
         }
-        // Le swap buffer est géré séparément par Application::Run
+
+        // Échanger les buffers à la fin de chaque mise à jour
+        SDL_GL_SwapWindow(m_Window);
     }
 
     // Échange des buffers

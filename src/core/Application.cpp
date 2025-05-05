@@ -60,26 +60,23 @@ namespace Tesseract {
 
             // Ne pas rendre si la fenêtre est minimisée
             if (!m_Minimized) {
-                // 1. Nettoyage de l'écran
-                // TODO: Configurer la couleur via une scène ou settings
-                RenderCommand::SetClearColor({0.1f, 0.1f, 0.1f, 1});
+                // 1. Nettoyage de l'écran avec une couleur distinctive pour débug
+                RenderCommand::SetClearColor({0.1f, 0.1f, 0.2f, 1.0f}); // Bleu foncé
                 RenderCommand::Clear();
 
                 // 2. Mise à jour des couches (Logique du jeu/moteur)
-                //    Renderer2D::BeginScene() et EndScene() sont appelés DANS les couches
-                //    qui effectuent le rendu 2D (comme TesseractLayer)
                 for (auto& layer : m_LayerStack)
                     layer->OnUpdate(timestep);
 
-                // 3. Rendu ImGui
-                m_ImGuiLayer->Begin(); // Démarre la frame ImGui
+                // 3. Rendu ImGui - Assurons-nous qu'ImGui fonctionne correctement
+                m_ImGuiLayer->Begin();
                 for (auto& layer : m_LayerStack)
-                    layer->OnImGuiRender(); // Permet aux couches de dessiner des UI ImGui
-                m_ImGuiLayer->End();   // Termine la frame ImGui et prépare le dessin
+                    layer->OnImGuiRender();
+                m_ImGuiLayer->End();
             }
 
             // 4. Mise à jour de la fenêtre (Polling events, Swap Buffers)
-            m_Window->OnUpdate(); // Gère les events SDL et le swap buffers
+            m_Window->OnUpdate();
         }
 
         Logger::Info("Exiting Application Run Loop.");
