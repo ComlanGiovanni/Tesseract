@@ -85,9 +85,8 @@ namespace Tesseract {
         s_Data.WhiteTexture->SetData(&whiteTextureData, sizeof(uint32_t));
 
         // Création du Shader
-        // Assurez-vous que le chemin est correct par rapport à l'exécutable
-        // Si l'exécutable est dans build/, alors ../assets/ est correct.
-        s_Data.TextureShader = Shader::Create("../assets/shaders/Texture.glsl");
+        // Utiliser un chemin absolu pour éviter les problèmes de chemin relatif
+        s_Data.TextureShader = Shader::Create("assets/shaders/Texture.glsl");
         TS_ASSERT(s_Data.TextureShader, "Failed to load Texture shader!");
 
         // Configuration initiale du shader (si nécessaire, ex: définir les slots de texture)
