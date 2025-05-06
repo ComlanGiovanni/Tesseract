@@ -93,31 +93,19 @@ namespace Tesseract {
             type.erase(0, type.find_first_not_of(" \t\r\n"));
             type.erase(type.find_last_not_of(" \t\r\n") + 1);
 
-
             GLenum shaderType = 0;
             if (type == "vertex")       shaderType = GL_VERTEX_SHADER;
             else if (type == "fragment") shaderType = GL_FRAGMENT_SHADER;
-            else { // Ajout des accolades
-                 TS_ASSERT(false, "Invalid shader type specified in #type directive: '{}'", type);
+            else {
+                TS_ASSERT(false, "Invalid shader type specified in #type directive: '{}'", type);
             }
 
             size_t nextLinePos = source.find_first_not_of("\r\n", eol);
             TS_ASSERT(nextLinePos != std::string::npos, "Syntax error: missing shader code after #type directive.");
             pos = source.find(typeToken, nextLinePos);
 
-            // Calculer la position de début et la longueur du code source
             size_t startPos = nextLinePos;
-            size_t length = (pos == std::string::npos) ?
-                            source.length() - startPos : // Jusqu'à la fin si pas d'autre #type
-                            pos - startPos; // Jusqu'au prochain #type
-
-            // Optionnel: retirer les fins de ligne potentielles à la fin de la sous-chaîne
-            // Bien que la compilation GLSL devrait les ignorer
-            // size_t lastChar = source.find_last_not_of(" \t\r\n", startPos + length - 1);
-            // if (lastChar != std::string::npos && lastChar >= startPos) {
-            //     length = lastChar - startPos + 1;
-            // }
-
+            size_t length = (pos == std::string::npos) ? source.length() - startPos : pos - startPos;
             shaderSources[shaderType] = source.substr(startPos, length);
         }
 
@@ -135,6 +123,7 @@ namespace Tesseract {
             GLuint shader = glCreateShader(type);
 
             const GLchar* sourceCStr = source.c_str();
+            glShaderSource(shader, 1, &sourceCStr, 0);
 
             // --- DEBUG: Afficher la source exacte passée à glShaderSource ---
             Logger::Trace("--- Compiling {} Shader Source ---", Utils::GLShaderTypeToString(type));
@@ -150,8 +139,6 @@ namespace Tesseract {
             }
             Logger::Trace("--- End {} Shader Source ---", Utils::GLShaderTypeToString(type));
             // --- FIN DEBUG ---
-
-            glShaderSource(shader, 1, &sourceCStr, 0);
 
             glCompileShader(shader);
 
@@ -221,93 +208,99 @@ namespace Tesseract {
         glUseProgram(0);
     }
 
-    GLint OpenGLShader::GetUniformLocation(const std::string& name) const {
+    GLint OpenGLShader::GetUniformLocation(const std::string& name) {
+        // Vérifier d'abord dans le cache
         if (m_UniformLocationCache.find(name) != m_UniformLocationCache.end()) {
             return m_UniformLocationCache[name];
         }
 
+        // S'assurer que le shader est bien lié avant de chercher l'uniform
+        GLint currentProgram;
+        glGetIntegerv(GL_CURRENT_PROGRAM, &currentProgram);
+        if (currentProgram != m_RendererID) {
+            Logger::Warn("Shader not bound when getting uniform location for '{}'!", name);
+            Bind();
+        }
+
         GLint location = glGetUniformLocation(m_RendererID, name.c_str());
         if (location == -1) {
-            TS_CORE_WARN("Uniform '{0}' not found in shader '{1}'!", name, m_FilePath);
+            Logger::Warn("Uniform '{}' not found in shader '{}' (ID: {})!", name, m_Name, m_RendererID);
+            // Vérifier si le shader est bien compilé et lié
+            GLint status;
+            glGetProgramiv(m_RendererID, GL_LINK_STATUS, &status);
+            if (status == GL_FALSE) {
+                Logger::Error("Shader program not properly linked!");
+            }
+        } else {
+            Logger::Trace("Found uniform '{}' at location {} in shader '{}'", name, location, m_Name);
         }
-        const_cast<OpenGLShader*>(this)->m_UniformLocationCache[name] = location;
+
+        // Mettre en cache même les locations invalides pour éviter des recherches répétées
+        m_UniformLocationCache[name] = location;
         return location;
     }
 
     void OpenGLShader::SetInt(const std::string& name, int value) {
-        UploadUniformInt(name, value);
+        GLint location = GetUniformLocation(name);
+        if (location != -1) {
+            glUniform1i(location, value);
+        }
     }
 
     void OpenGLShader::SetFloat(const std::string& name, float value) {
-        UploadUniformFloat(name, value);
+        GLint location = GetUniformLocation(name);
+        if (location != -1) {
+            glUniform1f(location, value);
+        }
     }
 
     void OpenGLShader::SetFloat2(const std::string& name, const glm::vec2& value) {
-        UploadUniformFloat2(name, value);
+        GLint location = GetUniformLocation(name);
+        if (location != -1) {
+            glUniform2f(location, value.x, value.y);
+        }
     }
 
     void OpenGLShader::SetFloat3(const std::string& name, const glm::vec3& value) {
-        UploadUniformFloat3(name, value);
+        GLint location = GetUniformLocation(name);
+        if (location != -1) {
+            glUniform3f(location, value.x, value.y, value.z);
+        }
     }
 
     void OpenGLShader::SetFloat4(const std::string& name, const glm::vec4& value) {
-        UploadUniformFloat4(name, value);
-    }
-
-    void OpenGLShader::SetMat3(const std::string& name, const glm::mat3& matrix) {
-        UploadUniformMat3(name, matrix);
-    }
-
-    void OpenGLShader::SetMat4(const std::string& name, const glm::mat4& matrix) {
-        UploadUniformMat4(name, matrix);
-    }
-
-    void OpenGLShader::UploadUniformInt(const std::string& name, int value) {
-        GLint location = GetUniformLocation(name);
-        if (location != -1) {
-             glUniform1i(location, value);
-        }
-    }
-
-    void OpenGLShader::UploadUniformFloat(const std::string& name, float value) {
-        GLint location = GetUniformLocation(name);
-        if (location != -1) {
-             glUniform1f(location, value);
-        }
-    }
-
-    void OpenGLShader::UploadUniformFloat2(const std::string& name, const glm::vec2& value) {
-        GLint location = GetUniformLocation(name);
-        if (location != -1) {
-             glUniform2f(location, value.x, value.y);
-        }
-    }
-
-    void OpenGLShader::UploadUniformFloat3(const std::string& name, const glm::vec3& value) {
-        GLint location = GetUniformLocation(name);
-        if (location != -1) {
-             glUniform3f(location, value.x, value.y, value.z);
-        }
-    }
-
-    void OpenGLShader::UploadUniformFloat4(const std::string& name, const glm::vec4& value) {
         GLint location = GetUniformLocation(name);
         if (location != -1) {
             glUniform4f(location, value.x, value.y, value.z, value.w);
         }
     }
 
-    void OpenGLShader::UploadUniformMat3(const std::string& name, const glm::mat3& matrix) {
+    void OpenGLShader::SetMat3(const std::string& name, const glm::mat3& matrix) {
         GLint location = GetUniformLocation(name);
         if (location != -1) {
-             glUniformMatrix3fv(location, 1, GL_FALSE, glm::value_ptr(matrix));
+            glUniformMatrix3fv(location, 1, GL_FALSE, glm::value_ptr(matrix));
         }
     }
 
-    void OpenGLShader::UploadUniformMat4(const std::string& name, const glm::mat4& matrix) {
+    void OpenGLShader::SetMat4(const std::string& name, const glm::mat4& matrix) {
         GLint location = GetUniformLocation(name);
         if (location != -1) {
             glUniformMatrix4fv(location, 1, GL_FALSE, glm::value_ptr(matrix));
+        }
+    }
+
+    void OpenGLShader::SetViewProjection(const glm::mat4& matrix) {
+        Bind(); // S'assurer que le shader est lié
+        SetMat4("u_ViewProjection", matrix);
+
+        // Log pour le debug
+        if (Logger::GetLevel() <= Logger::Level::Trace) {
+            Logger::Trace("Setting ViewProjection matrix for shader '{}' (ID: {})", m_Name, m_RendererID);
+            Logger::Trace("Matrix values:");
+            for (int i = 0; i < 4; i++) {
+                Logger::Trace("[{:.3f} {:.3f} {:.3f} {:.3f}]",
+                    matrix[i][0], matrix[i][1], matrix[i][2], matrix[i][3]);
+            }
         }
     }
 } // namespace Tesseract

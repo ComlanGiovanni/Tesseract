@@ -28,6 +28,9 @@ namespace Tesseract {
         void SetMat3(const std::string& name, const glm::mat3& matrix) override;
         void SetMat4(const std::string& name, const glm::mat4& matrix) override;
 
+        // Helper pour la matrice de vue-projection
+        void SetViewProjection(const glm::mat4& matrix);
+
         const std::string& GetName() const override { return m_Name; }
 
         // Fonctions d'upload spécifiques à OpenGL
